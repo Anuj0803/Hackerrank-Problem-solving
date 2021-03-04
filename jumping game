@@ -1,0 +1,26 @@
+package practice;
+import java.io.*;
+
+import java.util.*;
+public class Solution {
+
+	public static void main(String []args)
+	  {
+		int x;
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int k = sc.nextInt();
+		int arr[]=new int[n];
+		for(int i=0;i<n;i++)
+		{
+			arr[i]=sc.nextInt();
+		}
+		Arrays.parallelSort(arr);
+		x=arr[n-1]-k;
+		if(x>0)
+		System.out.println(x);
+		else
+			System.out.println("0");
+	  }   
+}
+
