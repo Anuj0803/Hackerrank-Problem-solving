@@ -1,0 +1,46 @@
+// 24hr Time System
+package practice;
+import java.io.*;
+
+import java.util.*;
+public class Solution {
+
+	public static void main(String []args)
+	  {
+		  int s1;
+          Scanner sc = new Scanner(System.in);
+	      String s = sc.nextLine();
+	      if(s.charAt(8)=='P')
+		      {
+		    	 if(s.charAt(0)=='1' & s.charAt(1)=='2')
+		    	 {
+		    		 System.out.println("12"+":"+s.charAt(3)+s.charAt(4)+":"+s.charAt(6)+s.charAt(7));
+		    	 }
+		    	 else if(s.charAt(0)=='1' & s.charAt(1)=='1')
+		    	 {
+		    		 System.out.println("23"+":"+s.charAt(3)+s.charAt(4)+":"+s.charAt(6)+s.charAt(7));
+		    	 }
+		    	 else
+		    	 {
+		    		 s1=  s.charAt(1)-36;
+		    		 System.out.println(s1+":"+s.charAt(3)+s.charAt(4)+":"+s.charAt(6)+s.charAt(7));
+		    	 }
+		      }
+	      else if(s.charAt(8)=='A')
+	      {
+	    	  if(s.charAt(0)=='1' & s.charAt(1)=='2')
+		    	 {
+		    		 System.out.println("00"+":"+s.charAt(3)+s.charAt(4)+":"+s.charAt(6)+s.charAt(7));
+		    	 }
+	    	  else
+	    	  {
+	    		  System.out.print(s.charAt(0));
+	    		  System.out.print(s.charAt(1));
+	    		  System.out.println(":"+s.charAt(3)+s.charAt(4)+":"+s.charAt(6)+s.charAt(7));
+	    	  }
+	    		 
+	      }
+	      
+	  }   
+}
+
